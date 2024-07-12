@@ -1,0 +1,183 @@
+/* Estilos generales */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+html {
+    scroll-behavior: smooth;
+    
+}
+
+body {
+    background-color: #f4f4f4; /* Color de fondo suave */
+    line-height: 1.6; /* Espaciado de línea agradable */
+    overflow-x: hidden;
+        opacity: 1;
+        animation-name: fadeInOpacity;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in;
+        animation-duration: 1s;
+    
+    
+    
+}
+
+@keyframes fadeInOpacity {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+
+/* Navegación */
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 10px 20px; /* Reducción de espaciado */
+    background-color: #fca7da; /* Color de fondo rosa */
+    display: flex;
+    justify-content: space-between; /* Distribución de espacio uniforme */
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    z-index: 1000; /* Asegurar que esté encima del contenido */
+}
+
+.icon {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    object-fit: cover; /* Ajuste de imagen */
+    margin-right: 10px; /* Espaciado derecho */
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-family: "Antic Didone", serif;
+  font-weight: 500;
+  font-style: normal;
+    font-size: 1.1rem;
+    transition: color 0.3s ease; /* Transición de color suave */
+}
+
+nav a:hover {
+    color: #ff4a9e; /* Color de texto rosado al pasar el mouse */
+}
+
+/* Secciones */
+section {
+    width: 100%;
+    padding: 100px 20px; /* Espaciado en secciones */
+    text-align: center; /* Centrado de contenido */
+}
+
+.titulo1 {
+    margin-bottom: 40px; /* Espaciado inferior */
+    color: #fd0076;
+    font-size: large;
+    font-family: "Elsie", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.caja1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contenido {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 30px; /* Espaciado inferior */
+}
+
+.a {
+    flex: 0 1 calc(25% - 20px); /* Ajuste de tamaño de producto */
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease; /* Transición de transformación */
+}
+
+.a:hover {
+    transform: translateY(-5px); /* Efecto de elevación */
+}
+
+.producto {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.parrafo {
+    padding: 10px;
+    text-align: center;
+    font-family: "Antic Didone", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.nombre {
+    font-size: 1.2rem;
+    color: #ff4a9e;
+}
+
+.precio {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ce0060;
+    font-family: "Antic Didone", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+footer{
+    background-color: #1d1d1d;
+}
+
+#logos{
+    display: flex;
+    justify-content: space-around;
+}
+
+.miau{
+    display: flex;
+    flex-direction: row;
+}
+
+footer{
+    padding: 30px;
+}
+
+.contacto{
+    display: flex;
+   padding-top: 10px;
+    padding-left: 10px;
+    color: #f4f4f4;
+    font-family: "Antic Didone", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+#wof{
+    display: flex;
+    justify-content: center;
+    color: #ff4a9e;
+    font-family: "Antic Didone", serif;
+  font-weight: 600;
+  font-style: normal;
+    
+}
